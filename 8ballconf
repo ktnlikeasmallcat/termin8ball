@@ -1,0 +1,58 @@
+[global_config]
+  focus = mouse
+  dbus = False
+  geometry_hinting = True
+  tab_position = bottom
+  broadcast_default = off
+  borderless = True
+  use_custom_url_handler = False
+  custom_url_handler = lynx
+  inactive_color_offset = 0.0
+  enabled_plugins = APTURLHandler, CustomCommandsMenu, TerminalShot
+  suppress_multiple_term_dialog = True
+  window_state = normal
+[keybindings]
+  split_horiz = <Super>minus
+  split_vert = <Super>backslash
+  close_term = <Super>q
+  line_up = <Primary><Shift>Up
+  line_down = <Primary><Shift>Down
+  resize_up = <Shift><Alt>Up
+  resize_down = <Shift><Alt>Down
+  edit_tab_title = <Shift><Alt><Ctrl>F12
+  hide_window = <Shift><Alt><Ctrl>F11
+[profiles]
+  [[8]]
+    allow_bold = True
+    icon_bell = False
+    background_color = "#555555"
+    background_darkness = 0.9
+    background_type = transparent
+    #color_scheme = 'black_on_white'
+    cursor_blink = False
+    cursor_shape = ibeam
+    cursor_color = foreground_color
+    cursor_color_fg = True
+    font = ProggyCleanTT CE 5
+    foreground_color = "#000000"
+    #foreground_color = "black"
+    #palette = #FFFFFF:#000000
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_lines = 1000
+    scrollback_infinite = True
+    exit_action = close
+    use_theme_colors = False
+    use_system_font = False
+    rewrap_on_resize = False
+    use_custom_command = True
+    #term = 256color
+    colorterm = truecolor
+    custom_command = 8ball.sh
+[layouts]
+  [[default]]
+    [[window0]]
+      type = Window
+    [[child1]]
+      type = Terminal
+      parent = window0
