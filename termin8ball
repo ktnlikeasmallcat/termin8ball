@@ -1,0 +1,3 @@
+#!/bin/bash
+
+terminator --config ~/.config/terminator/8ballconf --profile=8 --geometry=515x515
